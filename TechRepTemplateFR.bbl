@@ -1,0 +1,33 @@
+\begin{thebibliography}{3}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname fonteauteurs\endcsname\relax
+\def\fonteauteurs{\scshape}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}%
+    \message{You should include the url package}\fi
+
+\bibitem[Deriche et Faugeras(1995)\bgroup\fonteauteurs\bgroup
+  Deriche\egroup\egroup{} et \bgroup\fonteauteurs\bgroup
+  Faugeras\egroup\egroup{}]{deriche95}
+R.~\bgroup\fonteauteurs\bgroup Deriche\egroup\egroup{} et
+  O.~\bgroup\fonteauteurs\bgroup Faugeras\egroup\egroup{} :
+\newblock {Les EDP en traitement des images et vision par ordinateur}.
+\newblock Rapport technique 2697, INRIA, Domaine de Voluceau, Roc\-quen\-court,
+  novembre 1995.
+
+\bibitem[Tschumperlé(2002)\bgroup\fonteauteurs\bgroup
+  Tschumperlé\egroup\egroup{}]{tschumperle02}
+D.~\bgroup\fonteauteurs\bgroup Tschumperlé\egroup\egroup{} :
+\newblock {\em {PDE-Based Regularization of Multivalued Images and
+  Applications}}.
+\newblock Thèse de doctorat, {Université de Nice}, Sophia Antipolis, France,
+  décembre 2002.
+
+\bibitem[Weickert(1997)\bgroup\fonteauteurs\bgroup
+  Weickert\egroup\egroup{}]{weickert97}
+J.~\bgroup\fonteauteurs\bgroup Weickert\egroup\egroup{} :
+\newblock {A Review of Nonlinear Diffusion Filtering}.
+\newblock {\em Lecture Notes in Computer Science},
+  1252\string:\penalty500\relax 3--28, 1997.
+
+\end{thebibliography}
