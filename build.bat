@@ -1,4 +1,4 @@
-pdflatex TechRepTemplateFR
-bibtex biblio.bib
-pdflatex TechRepTemplateFR
-pdflatex TechRepTemplateFR
+pdflatex rapport
+bibtex rapport
+pdflatex rapport
+pdflatex rapport

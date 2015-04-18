@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.14)  18 APR 2015 18:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.14)  18 APR 2015 18:50
 entering extended mode
-**TechRepTemplateFR
-(D:\Ecole\imn538\rapportFinal\TechRepTemplateFR.tex
+**rapport
+(D:\Ecole\imn538\rapportFinal\rapport.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -411,7 +411,7 @@ Package refstyle Info: \annexpageref created on input line 32.
 \f@ncyO@olf=\skip63
 \f@ncyO@orf=\skip64
 )
-(D:\Ecole\imn538\rapportFinal\TechRepTemplateFR.aux)
+(D:\Ecole\imn538\rapportFinal\rapport.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
 LaTeX Font Info:    ... okay on input line 98.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
@@ -471,41 +471,42 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 140.
 
-(D:\Ecole\imn538\rapportFinal\TechRepTemplateFR.toc)
+(D:\Ecole\imn538\rapportFinal\rapport.toc)
 \tf@toc=\write3
  [2]
-(D:\Ecole\imn538\rapportFinal\TechRepTemplateFR.lot)
+(D:\Ecole\imn538\rapportFinal\rapport.lot)
 \tf@lot=\write4
 
-(D:\Ecole\imn538\rapportFinal\TechRepTemplateFR.lof)
+(D:\Ecole\imn538\rapportFinal\rapport.lof)
 \tf@lof=\write5
  [3]
-(D:\Ecole\imn538\rapportFinal\TR_intro.tex)
-(D:\Ecole\imn538\rapportFinal\TR_sect1.tex)
-(D:\Ecole\imn538\rapportFinal\TR_sect2.tex
+(D:\Ecole\imn538\rapportFinal\intro.tex)
+(D:\Ecole\imn538\rapportFinal\sect2.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
 )
-(D:\Ecole\imn538\rapportFinal\TR_sect3.tex)
-(D:\Ecole\imn538\rapportFinal\TR_concl.tex) [4] [5]
-(D:\Ecole\imn538\rapportFinal\TechRepTemplateFR.bbl
-You should include the url package) [6]
-(D:\Ecole\imn538\rapportFinal\TechRepTemplateFR.aux) ) 
+(D:\Ecole\imn538\rapportFinal\sect3.tex)
+(D:\Ecole\imn538\rapportFinal\concl.tex) [4]
+(D:\Ecole\imn538\rapportFinal\rapport.bbl You should include the url package
+
+Package natbib Warning: Empty `thebibliography' environment on input line 9.
+
+) [5] (D:\Ecole\imn538\rapportFinal\rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 4406 strings out of 493921
- 58877 string characters out of 3146483
- 124132 words of memory out of 3000000
- 7586 multiletter control sequences out of 15000+200000
- 33173 words of font info for 82 fonts, out of 3000000 for 9000
+ 4385 strings out of 493921
+ 58309 string characters out of 3146483
+ 123961 words of memory out of 3000000
+ 7572 multiletter control sequences out of 15000+200000
+ 29765 words of font info for 78 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,12n,43p,396b,265s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/M
-iKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX/fonts/type
-1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/urw/times/utm
-r8a.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TechRepTemplateFR.pdf (6 pages, 53503 bytes).
+ 27i,12n,43p,386b,265s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTe
+X/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX/fonts/type1/ur
+w/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/urw/times/utmr8a.
+pfb>
+Output written on rapport.pdf (5 pages, 38668 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
+ 27 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
