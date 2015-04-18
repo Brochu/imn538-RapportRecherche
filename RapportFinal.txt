@@ -1,0 +1,68 @@
+Rapport final - Génération procédurale
+
+Mise en contexte
+De nos jour, il est possible de créer de films et des jeux vidéo qui donnent toujours un meilleur effet de réalisme au fil des années. Ce réalisme provient de l'amélioration constantes des techniques utilisées lors de la création de ces médias. Un des aspects qui peut beaucoup influencer le réalisme est la modélisation des objets dans la scène. L'industrie tente toujours d'ajouter plus de détails aux modèles 3D utilisés dans le projet en ajoutant toujours plus de points et de triangles pour obtenir des formes qui imitent le mieux possible la forme réelle. Souvent, on concentre les efforts surtout sur les détails dans les personnages principaux mais travailler sur le réalisme de l'environnement peut aussi donner de bon, sinon meilleur résultat.
+
+-- image de GTV IV ici + assassin's creed --
+
+Puisqu'on améliore le réalisme de l'environnement autour des personnages, il faut ajouter plus d'information aux formes de la scène. De plus, l'environnement doit toujours être plus grand pour donner un meilleur sentiment d'immersion. Il y a un problème en ce sens puisque plus il faut d'information pour spécifier des formes dans la scène, plus il faut beaucoup de temps pour les artistes de créer cette information. Aussi, créer des environnement toujours plus grand demande aussi beaucoup de temps. Un moment donné, ce n'est plus envisageable de demander à des gens de faire ce travail. Il faut donc trouver une façon d'utiliser la technologie de façon intelligente pour faire ce travail automatiquement ou semi-automatiquement. Si on regarde la figure (GTV IV), on voit qu'il y a beaucoup trop de détail dans l'environnement pour que quelqu'un ou une équipe spécifie la position de tous les points de ce modèle. Ce jeu se déroule dans un environnement urbain c'est pourquoi l'étude se poursuit pour créer des modèles d'un environnement urbain. Pour obtenir un bon résultat, il est important d'avoir un bon sentiment d'immersion. Pour cela, il faut un bon réalisme ainsi qu'une bonne variété dans les bâtiments de la ville. Par exemple, les images des jeux "Assassin's Creed" et "GTA IV" sont des bons exemples d'environnements réussis. La question ici est, comment utiliser la technologie pour arriver a de bons résultats de façon automatisée?
+
+Présentation d'état de l'art
+Génération procédurale
+-- image de mincraft ici --
+
+La réponse à la question est la génération procédurale. Cette technique a été beaucoup popularisé par un jeu vidéo indie nommé Minecraft (voir figure minecraft). Par contre, il existe beaucoup de variantes à la génération procédurale. L'article étudié se concentre sur la génération procédurale de bâtiments pour générer un environnement urbain réaliste. Pour commencer, le fonctionnement de cette technique est d'utiliser des algorithme qui s'exécutent sur l'unité de traitement d'un ordinateur pour générer un élément. On ne spécifie pas directement le résultat de la génération ici parce qu'il est possible de générer pratiquement n'importe quel élément grâce à cette technique. Elle offre aussi la possibilité d'ajouter du hasard dans la génération pour ne pas obtenir toujours le même résutlat à chaque exécution. Elle est beaucoup utilisée puisqu'il est possible d'ajouter de la variété et de la rejouabilité dans les jeux de nos jours. Par contre, au départ, cette technique était beaucoup utilisée pour économiser de l'espace lors de la création de jeux. Puisque certains éléments étaient générés lorsque le jeu est en marche, il y avait moins de ressources à conserver en mémoire. Le premier exemple de génération procédurale se trouve dans le jeu Akalabeth (1980) -- reference wiki + img -- où les cartes étaient générées. La génération procédurale a beaucoup été popularisée par l'arrivée du jeu Minecraft. Certains jeux en font même un usage très intéressant. Par exemple, dans le jeu "Left 4 Dead", on génère la difficulté de la mission courante d'après les statistiques des joueurs ainsi que les équipements qu'ils ont sur eux. On remarque donc que l'on peut générer n'importe quel élément grâce à cette technique.
+
+Avant l'évolution de la technique élaborée dans l'article étudié, deux autres façon de générer des bâtiments de façon procédurale existaient.
+Technique 1 par Parish and Müller [2001]
+Ces chercheurs ont montré une méthode pour générer un grand environnements urbains composés d'un grand nombre de bâtiments. Chaque bâtiment est constitué de seulement de formes simples regroupées en un modele. Ensuite, on ajoute des détails sur la façade de chaque bâtiment avec l'aide de shaders. Comme nous verrons plus tard dans l'étude de la méthode présentée dans l'article, cela peut mener à des problèmes reliés au réalisme de la scène. 
+TODO: Trouver plus de détails sur cette technique
+Technique 2 par Wonka et al. [2003]
+Ici, les chercheurs ont voulu s'attaquer au problème de la génération de détails sur les façade des bâtiments générés. Ils ont réussi à créer des détails qui sont en fait générés à l'étape géométrique. Ces détails sont donc compris dans le modèle résultant et il n'est pas nécessaire d'utiliser des nuanceurs pour ajouter du réalisme aux façades des bâtiments. Par contre, avec cette technique, on s'attarde aux détails d'un seul bâtiment à la fois. Il n'est donc pas possible de générer un grand environnement urbain comme dans la première technique.
+
+On remarque que l'on désire obtenir un mélange de ces deux techniques. On désire un grand nombre de bâtiments dans notre ville et que ces bâtiments possèdent des détails géométriques pour augmenter le réalisme. Nous allons maintenant nous pencher sur la technique principale de l'article. On précisera aussi en quoi cette méthode est meilleure que les autres.
+TODO: Trouver plus de détails sur cette technique
+
+Technique de l'article
+La technique utilsée ici se base sur les grammaires de formes. La première partie de ce rapport se penche plus précisément sur le fonctionnement de base d'une grammaire. Cette technique ,comparée aux deux autres présentées au cours de ce rapport, génère les détails des bâtiments de façon géométrique par opposition aux nuanceurs. Il est donc possible de vérifier s'il existe des intersection entre les détails générés et les annuler puisque ces intersections enlèvent beaucoup de réalisme à une scène. Pour la deuxième technique présentée, l'avantage ici est que cette technique permet la création de grands environnements (référence en image du logiciel qui utilise cet algo) en gardant un temps d'exécution raisonnable. On présente donc quelques éléments de base sur lesquels l'algorithme est basé et plus tard, on montre les différentes étapes de l'algorithme plus en détail.
+Une grammaire [de forme]
+Dans le domaine informatique, une grammaire est définie par deux ensembles de symboles, un ensemble de règles et un symbole de départ. Le but d'une grammaire est de passer du symbole de départ et utiliser les règles pour passer à un état où il n'y a que des symboles terminaux. Le premier ensemble de symbole sont les symboles terminaux. Ces symboles servent à marquer la fin d'une série de changements sur un symbole. Un symbole terminal ne sera plus modifié par les règles de la grammaire. Ensuite, il y a l'ensemble des symboles non-terminaux. Ces symboles représentent des état transitifs qui seront modifiés lors de des itérations d'exécution de la grammaire. Pour finir, on définit les règles de la grammaires. Ces règles ont un format spécifique: ($$) non-terminal -> serie de terminaux et non terminaux ($$). Cette règle commence par annoncer sur quel symbole non-terminal il va agir et en quoi ce symbole sera transformé. On applique itérativement une règle à la fois sur la chaine de symbole courante jusqu'à obtenir une chaîne qui n'a que des symboles terminaux.
+
+Une grammaire de forme
+Dans le domaine de génération procédurale de bâtiment, on utilise la même idée de base mais on adapte les principes au rendu 3D. Par exemple, les symboles terminaux et non-terminaux sont des formes de base. Aussi, les règles donnent les transformation géométriques qu'il faut faire et les formes qu'il faut ajouter pour obtenir une forme terminale pour terminer l'exécution de la grammaire de forme. Voici quelques exemples de règles dans une grammarie de forme:
+$$ exemple1 $$
+$$ exemple2 $$
+On peut aussi spécifier des règles pour créer des sous-sections de formes géometriques. Généralement, on donne une séries de longeurs (les différentes séparations) et sur quel axe (x, y ou z) on fait la séparation. On peut utiliser ces séparation pour créer des détails sur les façades des bâtiments qu'on génère en insérant d'autres modèles alignés sur ces séparations.
+
+Au cours de cette recherche, j'ai fait une implémentation simpliste de cet algorithme pour démontrer les principes de base sur lesquels il est construit. Cette implémentation se concentre plus sur la création des règles et l'application de celles-ci séquentiellement. Les possibilités des règles de la grammaire de forme ont été limitées pour simplifier l'implémentation. Il est donc possible de créer des règles pour faire des translations, changements d'échelle, rotations et insérer certains primitives de base comme un cube, un cylindre et une sphère. Cette implémentation ne vise pas a montrer jusqu'à quel point il est possible d'ajouter des détails dans les structures générées mais la sélections et l'application de règle simples pour générer un modèle à trois dimensions. Voici un exemple d'une grammaire formée de 3 règles : 
+$$ règle 1 $$
+$$ règle 2 $$
+$$ règle 3 $$
+
+Si on utilise cette grammaire avec comme symbole de départ une position dans l'espace 3D, on obtient le résultat suivant:
+$image$
+
+On peut voir que dans ce cas les règles se sont seulement appliquées une à une jusqu'à obtenir que des symboles terminaux dans la liste.
+
+Les portées
+Un autre élément important de l'algorithme utilisé pour cette technique sont les portées. Une portée est une partie de l'espace 3D. Les transformations spécifiées dans les règles de production sont affectées sur les portées. Après les transformations géométriques, si on insère un nouveau modèle, il sera placé dans la portée et prendra la dimension et la position de la portée. On sait donc que chaque forme dans une configuration de l'algorithme possède une portée. De plus, il existe aussi une utilité pour des portées qui représentent un espace 2D. Ces portées peuvent être utilisées pour générer un toit sur un bâtiment de base. On défini une portée en 2D aligné sur un des murs du bâtiment ou le dessus de la forme et on applique des transformations et on insère des nouvelles formes pour obtenir un toit sur notre structure de base.
+
+L'algorithme
+Pour commencer, une configuration est le nom qu'on donne à un nombre fini de formes dans l'espace 3D. Aussi, dans notre cas, un symbole est représenté par une forme et ces symboles peuvent être soit non-terminaux ou terminaux. La définition plus précise des symboles se trouve plus haut dans ce document. Au départ l'algorithme doit recevoir une spécification d'un axiome qui est une configuration de formes simples pour démarrer la génération. On procède ensuite par étapes: 
+1. On sélectionne une forme (état) non-terminale qui est toujours active. À titre d'exemple, ce symbole est nommé n
+2. On choisit ensuite une règle de production de la grammaire de forme à appliquer. Il faut que cette règle soit composée du symbole n comme partie gauche. Après on génère (à partir de la spécification de la règle choisie) un nouvel ensemble de formes. On nomme ce nouvel ensemble nNew
+3. On place la forme n comme inactive dans la liste des formes de la configuration courante. Pour finir on ajoute l'ensemble de formes nNew à la configuration et on recommence à l'étapte no.1.
+
+Exemples de génération
+Les possibilités de génération sont pratiquement infinie. L'article étudié se penche plus en détails sur types d'exemples. Les trois premiers exemples montrés dans l'article sont volontairement simples pour montrer la base de l'algorithme. Ils montrent 3 types de constructions: une maison simple, un bloc d'édifices à bureaux et une maison un peu plus poussée. Par après, les exemples montrés sont plus complexes et montrent une utilisation plus poussée de l'algorithme. Le premier exemple plus complexe est une extension du 3e exemple qui assemble plusieurs éléments pour créer un quartier de banlieue. Ensuite, le dernier exemple de l'article montre la génération d'une ville entière basée sur le style de Pompeii.
+
+Exemple 1 (maison simple)
+-- insérer img ex 1 --
+Cet exemple montre la façon de créer la structure la plus simple avec cet algorithme pour le corps principal de la maison et la forme la plus simple de toits. Les murs sont simplement construit à partir d'une forme deux dimensions avec laquelle une extrusion a été faite pour obtenir un prisme en trois dimensions. Pour ce qui est du toit, il est construit à partir deux 2 plans en 2D qui se rencontrent au milieu du prisme de la structure du bâtiment.
+
+Exemple 2 (bloc d'édifices à bureaux)
+-- insérer img ex 2 --
+Cet exemple tente de montrer qu'il est possible de générer plus qu'un seul bâtiment à la fois à l'aide de cet algorithme. L'algorithme utilise encore des formes 2D comme une base et l'extrusion de ces formes donne la forme générale des bâtiments. La distribution des formes 2D au départ définissent la densité de la ville que l'on veut obtenir. Par exemple, dans la figure EX2 il y a une grande densité de grand bâtiments. Aucun détails n'a été générer sur les façades des bâtiments dans cet exemple puisque les détails seront montrés dans les exemples suivants.
+
+Exemple 3 (maison de banlieue)
+-- insérer img ex 3 --

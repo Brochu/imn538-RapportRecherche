@@ -3,23 +3,30 @@
 \label{sect:etatArt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Intro to \sectref{etatArt}.
-
-
 \subsection{Génération Procédurale}
 \label{ssect:procgen}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-GÉNÉRATION PROCÉDURALE
+-- image de mincraft ici --
+
+La réponse à la question est la génération procédurale. Cette technique a été beaucoup popularisé par un jeu vidéo indie nommé Minecraft (voir figure minecraft). Par contre, il existe beaucoup de variantes à la génération procédurale. L'article étudié se concentre sur la génération procédurale de bâtiments pour générer un environnement urbain réaliste. Pour commencer, le fonctionnement de cette technique est d'utiliser des algorithme qui s'exécutent sur l'unité de traitement d'un ordinateur pour générer un élément. On ne spécifie pas directement le résultat de la génération ici parce qu'il est possible de générer pratiquement n'importe quel élément grâce à cette technique. Elle offre aussi la possibilité d'ajouter du hasard dans la génération pour ne pas obtenir toujours le même résutlat à chaque exécution. Elle est beaucoup utilisée puisqu'il est possible d'ajouter de la variété et de la rejouabilité dans les jeux de nos jours. Par contre, au départ, cette technique était beaucoup utilisée pour économiser de l'espace lors de la création de jeux. Puisque certains éléments étaient générés lorsque le jeu est en marche, il y avait moins de ressources à conserver en mémoire. Le premier exemple de génération procédurale se trouve dans le jeu Akalabeth (1980) -- reference wiki + img -- où les cartes étaient générées. La génération procédurale a beaucoup été popularisée par l'arrivée du jeu Minecraft. Certains jeux en font même un usage très intéressant. Par exemple, dans le jeu "Left 4 Dead", on génère la difficulté de la mission courante d'après les statistiques des joueurs ainsi que les équipements qu'ils ont sur eux. On remarque donc que l'on peut générer n'importe quel élément grâce à cette technique.
+
+Avant l'évolution de la technique élaborée dans l'article étudié, deux autres façon de générer des bâtiments de façon procédurale existaient.
 
 \subsection{Première Technique *auteur + année*}
 \label{ssect:first}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-PREMIÈRE TECHNIQUE EXPLIQUÉE
+Technique 1 par Parish and Müller [2001]
+Ces chercheurs ont montré une méthode pour générer un grand environnements urbains composés d'un grand nombre de bâtiments. Chaque bâtiment est constitué de seulement de formes simples regroupées en un modele. Ensuite, on ajoute des détails sur la façade de chaque bâtiment avec l'aide de shaders. Comme nous verrons plus tard dans l'étude de la méthode présentée dans l'article, cela peut mener à des problèmes reliés au réalisme de la scène. 
+TODO: Trouver plus de détails sur cette technique
 
 \subsection{Deuxième Technique *auteur + année*}
 \label{ssect:second}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-DEUXIÈME TECHNIQUE EXPLIQUÉE
+Technique 2 par Wonka et al. [2003]
+Ici, les chercheurs ont voulu s'attaquer au problème de la génération de détails sur les façade des bâtiments générés. Ils ont réussi à créer des détails qui sont en fait générés à l'étape géométrique. Ces détails sont donc compris dans le modèle résultant et il n'est pas nécessaire d'utiliser des nuanceurs pour ajouter du réalisme aux façades des bâtiments. Par contre, avec cette technique, on s'attarde aux détails d'un seul bâtiment à la fois. Il n'est donc pas possible de générer un grand environnement urbain comme dans la première technique.
+
+On remarque que l'on désire obtenir un mélange de ces deux techniques. On désire un grand nombre de bâtiments dans notre ville et que ces bâtiments possèdent des détails géométriques pour augmenter le réalisme. Nous allons maintenant nous pencher sur la technique principale de l'article. On précisera aussi en quoi cette méthode est meilleure que les autres.
+TODO: Trouver plus de détails sur cette technique
