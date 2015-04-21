@@ -23,9 +23,12 @@ Un autre élément important de l'algorithme utilisé pour cette technique sont les
 
 \subsubsection{L'algorithme}
 Pour commencer, une configuration est le nom qu'on donne à un nombre fini de formes dans l'espace 3D. Aussi, dans notre cas, un symbole est représenté par une forme et ces symboles peuvent être soit non-terminaux ou terminaux. La définition plus précise des symboles se trouve plus haut dans ce document. Au départ l'algorithme doit recevoir une spécification d'un axiome qui est une configuration de formes simples pour démarrer la génération. On procède ensuite par étapes: 
-1. On sélectionne une forme (état) non-terminale qui est toujours active. À titre d'exemple, ce symbole est nommé n
-2. On choisit ensuite une règle de production de la grammaire de forme à appliquer. Il faut que cette règle soit composée du symbole n comme partie gauche. Après on génère (à partir de la spécification de la règle choisie) un nouvel ensemble de formes. On nomme ce nouvel ensemble nNew
-3. On place la forme n comme inactive dans la liste des formes de la configuration courante. Pour finir on ajoute l'ensemble de formes nNew à la configuration et on recommence à l'étapte no.1.
+
+\begin{enumerate}
+	\item On sélectionne une forme (état) non-terminale qui est toujours active. À titre d'exemple, ce symbole est nommé n
+	\item On choisit ensuite une règle de production de la grammaire de forme à appliquer. Il faut que cette règle soit composée du symbole n comme partie gauche. Après on génère (à partir de la spécification de la règle choisie) un nouvel ensemble de formes. On nomme ce nouvel ensemble nNew
+	\item On place la forme n comme inactive dans la liste des formes de la configuration courante. Pour finir on ajoute l'ensemble de formes nNew à la configuration et on recommence à l'étapte no.1.
+\end{enumerate}
 
 \subsection{Exemples}
 \label{ssect:ex}
@@ -43,9 +46,13 @@ Cet exemple tente de montrer qu'il est possible de générer plus qu'un seul bâtim
 
 \subsubsection{Exemple 3 (maison de banlieue)}
 -- insérer img ex 3 --
+Dans cet exemple, on ajoute des détails autour de la maison. Par exemple, on ajoute une cour, un stationnement, et de la végétation. Ces détails sont générés de la même façon que les éléments de base. On ajoute aussi des trottoirs autour de la propriété.
+
+-- insérer img quartier --
+On peut aussi utiliser plusieurs maisons de ce type et les rassembler pour créer un quartier de banlieue.
 
 \subsection{Outil Existant}
 \label{ssect:outil}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-OUTIL EXISTANT
+Il existe un outils qui fait usage de la technique décrite dans l'article. Cet outils s'apelle CityEngine. On remarque beaucoup des principes présenté dans l'article dans le vidéo d'introduction de l'outil[reference].
