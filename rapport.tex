@@ -31,6 +31,7 @@
         \newref{step}{name=étape~,names=étapes~,Name=Étape~,Names=Étapes~,lsttxt={\ et\ },rngtxt={\ à\ }}
         \newref{annex}{name=annexe~,names=annexes~,Name=Annexe~,Names=Annexes~,lsttxt={\ et\ },rngtxt={\ à\ }}
     \usepackage{fancyhdr}
+    \usepackage{wrapfig}
 
     \setlength{\textwidth}{175mm}
     \setlength{\textheight}{210mm}
@@ -131,7 +132,6 @@
 
 %-------------------------------------------------------------------------
 
-\renewcommand{\listtablename}{Liste des tableaux}
 \renewcommand{\refname}{Bibliographie}
 \renewcommand{\listfigurename}{Liste des figures}
 
@@ -141,8 +141,6 @@
 
 \eject
 
-    \addcontentsline{toc}{section}{\listtablename}
-    \listoftables
     \addcontentsline{toc}{section}{\listfigurename}
     \listoffigures
 
