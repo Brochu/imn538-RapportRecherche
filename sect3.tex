@@ -36,20 +36,44 @@ Pour commencer, une configuration est le nom qu'on donne à un nombre fini de for
 
 Les possibilités de génération sont pratiquement infinie. L'article étudié se penche plus en détails sur types d'exemples. Les trois premiers exemples montrés dans l'article sont volontairement simples pour montrer la base de l'algorithme. Ils montrent 3 types de constructions: une maison simple, un bloc d'édifices à bureaux et une maison un peu plus poussée. Par après, les exemples montrés sont plus complexes et montrent une utilisation plus poussée de l'algorithme. Le premier exemple plus complexe est une extension du 3e exemple qui assemble plusieurs éléments pour créer un quartier de banlieue. Ensuite, le dernier exemple de l'article montre la génération d'une ville entière basée sur le style de Pompeii.
 
-\subsubsection{Exemple 1 (maison simple)}
--- insérer img ex 1 --
+\subsubsection{Exemple 1}
+
+\begin{figure}[h]
+    \caption{Une maison simple}
+    \centering
+
+    \includegraphics[width=7cm]{simpleEx.png}
+    \label{simpEx}
+\end{figure}
+
 Cet exemple montre la façon de créer la structure la plus simple avec cet algorithme pour le corps principal de la maison et la forme la plus simple de toits. Les murs sont simplement construit à partir d'une forme deux dimensions avec laquelle une extrusion a été faite pour obtenir un prisme en trois dimensions. Pour ce qui est du toit, il est construit à partir deux 2 plans en 2D qui se rencontrent au milieu du prisme de la structure du bâtiment.
 
-\subsubsection{Exemple 2 (bloc d'édifices à bureaux)}
--- insérer img ex 2 --
-Cet exemple tente de montrer qu'il est possible de générer plus qu'un seul bâtiment à la fois à l'aide de cet algorithme. L'algorithme utilise encore des formes 2D comme une base et l'extrusion de ces formes donne la forme générale des bâtiments. La distribution des formes 2D au départ définissent la densité de la ville que l'on veut obtenir. Par exemple, dans la figure EX2 il y a une grande densité de grand bâtiments. Aucun détails n'a été générer sur les façades des bâtiments dans cet exemple puisque les détails seront montrés dans les exemples suivants.
+\subsubsection{Exemple 2}
 
-\subsubsection{Exemple 3 (maison de banlieue)}
--- insérer img ex 3 --
+\begin{figure}[h]
+    \caption{Un bloc d'édifices a bureaux}
+    \centering
+
+    \includegraphics[width=7cm]{blocEx.png}
+    \label{blocEx}
+\end{figure}
+
+Cet exemple tente de montrer qu'il est possible de générer plus qu'un seul bâtiment à la fois à l'aide de cet algorithme. L'algorithme utilise encore des formes 2D comme une base et l'extrusion de ces formes donne la forme générale des bâtiments. La distribution des formes 2D au départ définissent la densité de la ville que l'on veut obtenir. Par exemple, dans la figure~\ref{blocEx} il y a une grande densité de grand bâtiments. Aucun détails n'a été générer sur les façades des bâtiments dans cet exemple puisque les détails seront montrés dans les exemples suivants.
+
+\subsubsection{Exemple 3}
+
+\begin{figure}[h]
+    \caption{Une maison de banlieue plus évoluée}
+    \centering
+
+    \includegraphics[width=7cm]{banEx.png}
+    \includegraphics[width=7cm]{groupEx.png}
+    \label{groupEx}
+\end{figure}
+
 Dans cet exemple, on ajoute des détails autour de la maison. Par exemple, on ajoute une cour, un stationnement, et de la végétation. Ces détails sont générés de la même façon que les éléments de base. On ajoute aussi des trottoirs autour de la propriété.
 
--- insérer img quartier --
-On peut aussi utiliser plusieurs maisons de ce type et les rassembler pour créer un quartier de banlieue.
+On peut aussi utiliser plusieurs maisons de ce type et les rassembler pour créer un quartier de banlieue (figure~\ref{groupEx}). Ce rassemblement ne veut pas seulement dire qu'on execute plusieurs fois l'algorithme et qu'on combine les modèles résultants en un seul. On peut tout simplement modifier les règles de l'algorithme pour faire en sorte qu'il soit possible de générer plus qu'un seul bâtiment, mais conserver les règles qui ajoutent des détails de végétation et des trottoirs. De la même façon, on peut générer une ville plus grande en utilisant les règles de l'exemple 2 comme une base.
 
 \subsection{Outil Existant}
 \label{ssect:outil}
