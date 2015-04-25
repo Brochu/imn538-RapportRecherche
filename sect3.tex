@@ -10,19 +10,19 @@ La technique utilsée ici se base sur les grammaires de formes. La première parti
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Une grammaire}
-Dans le domaine informatique, une grammaire est définie par deux ensembles de symboles, un ensemble de règles et un symbole de départ. Le but d'une grammaire est de passer du symbole de départ et utiliser les règles pour passer à un état où il n'y a que des symboles terminaux. Le premier ensemble de symbole sont les symboles terminaux. Ces symboles servent à marquer la fin d'une série de changements sur un symbole. Un symbole terminal ne sera plus modifié par les règles de la grammaire. Ensuite, il y a l'ensemble des symboles non-terminaux. Ces symboles représentent des état transitifs qui seront modifiés lors de des itérations d'exécution de la grammaire. Pour finir, on définit les règles de la grammaires. Ces règles ont un format spécifique: () non-terminal -> serie de terminaux et non terminaux (). Cette règle commence par annoncer sur quel symbole non-terminal il va agir et en quoi ce symbole sera transformé. On applique itérativement une règle à la fois sur la chaine de symbole courante jusqu'à obtenir une chaîne qui n'a que des symboles terminaux.
+Dans le domaine informatique, une grammaire est définie par deux ensembles de symboles, un ensemble de règles et un symbole de départ. Le but d'une grammaire est de passer du symbole de départ et utiliser les règles pour passer à un état où il n'y a que des symboles terminaux~\cite{CtxFreeGram}. Le premier ensemble de symbole sont les symboles terminaux. Ces symboles servent à marquer la fin d'une série de changements sur un symbole. Un symbole terminal ne sera plus modifié par les règles de la grammaire. Ensuite, il y a l'ensemble des symboles non-terminaux. Ces symboles représentent des état transitifs qui seront modifiés lors de des itérations d'exécution de la grammaire. Pour finir, on définit les règles de la grammaires. Ces règles ont un format spécifique: non-terminal -> serie de terminaux et non terminaux. Cette règle commence par annoncer sur quel symbole non-terminal il va agir et en quoi ce symbole sera transformé. On applique itérativement une règle à la fois sur la chaine de symbole courante jusqu'à obtenir une chaîne qui n'a que des symboles terminaux.
 
 \subsubsection{Une grammaire de forme}
-Dans le domaine de génération procédurale de bâtiment, on utilise la même idée de base mais on adapte les principes au rendu 3D. Par exemple, les symboles terminaux et non-terminaux sont des formes de base. Aussi, les règles donnent les transformation géométriques qu'il faut faire et les formes qu'il faut ajouter pour obtenir une forme terminale pour terminer l'exécution de la grammaire de forme. Voici quelques exemples de règles dans une grammarie de forme:
-$$ exemple1 $$
-$$ exemple2 $$
+Dans le domaine de génération procédurale de bâtiment, on utilise la même idée de base mais on adapte les principes au rendu 3D. Par exemple, les symboles terminaux et non-terminaux sont des formes de base~\cite{ShapeGram}. Aussi, les règles donnent les transformation géométriques qu'il faut faire et les formes qu'il faut ajouter pour obtenir une forme terminale pour terminer l'exécution de la grammaire de forme. Voici quelques exemples de règles dans une grammarie de forme~\cite{MainArticle}:
+$$ A \rightarrow [ T(0,0,6) S(8,10,18) I("cube") ] T(6,0,0) S(7,13,18) I("cube") T(0,0,16) S(8,15,8) I("cylinder") $$
+$$ fac \rightarrow Subdiv("Y",3.5,0.3,3,3,3) \{ floor | ledge | floor | floor | floor \} $$
 On peut aussi spécifier des règles pour créer des sous-sections de formes géometriques. Généralement, on donne une séries de longeurs (les différentes séparations) et sur quel axe (x, y ou z) on fait la séparation. On peut utiliser ces séparation pour créer des détails sur les façades des bâtiments qu'on génère en insérant d'autres modèles alignés sur ces séparations.
 
 \subsubsection{Les portées}
-Un autre élément important de l'algorithme utilisé pour cette technique sont les portées. Une portée est une partie de l'espace 3D. Les transformations spécifiées dans les règles de production sont affectées sur les portées. Après les transformations géométriques, si on insère un nouveau modèle, il sera placé dans la portée et prendra la dimension et la position de la portée. On sait donc que chaque forme dans une configuration de l'algorithme possède une portée. De plus, il existe aussi une utilité pour des portées qui représentent un espace 2D. Ces portées peuvent être utilisées pour générer un toit sur un bâtiment de base. On défini une portée en 2D aligné sur un des murs du bâtiment ou le dessus de la forme et on applique des transformations et on insère des nouvelles formes pour obtenir un toit sur notre structure de base.
+Un autre élément important de l'algorithme utilisé pour cette technique sont les portées. Une portée est une partie de l'espace 3D. Les transformations spécifiées dans les règles de production sont affectées sur les portées~\cite{MainArticle}. Après les transformations géométriques, si on insère un nouveau modèle, il sera placé dans la portée et prendra la dimension et la position de la portée. On sait donc que chaque forme dans une configuration de l'algorithme possède une portée. De plus, il existe aussi une utilité pour des portées qui représentent un espace 2D. Ces portées peuvent être utilisées pour générer un toit sur un bâtiment de base. On défini une portée en 2D aligné sur un des murs du bâtiment ou le dessus de la forme et on applique des transformations et on insère des nouvelles formes pour obtenir un toit sur notre structure de base.
 
 \subsubsection{L'algorithme}
-Pour commencer, une configuration est le nom qu'on donne à un nombre fini de formes dans l'espace 3D. Aussi, dans notre cas, un symbole est représenté par une forme et ces symboles peuvent être soit non-terminaux ou terminaux. La définition plus précise des symboles se trouve plus haut dans ce document. Au départ l'algorithme doit recevoir une spécification d'un axiome qui est une configuration de formes simples pour démarrer la génération. On procède ensuite par étapes: 
+Pour commencer, une configuration est le nom qu'on donne à un nombre fini de formes dans l'espace 3D. Aussi, dans notre cas, un symbole est représenté par une forme et ces symboles peuvent être soit non-terminaux ou terminaux. La définition plus précise des symboles se trouve plus haut dans ce document. Au départ l'algorithme doit recevoir une spécification d'un axiome qui est une configuration de formes simples pour démarrer la génération. On procède ensuite par étapes~\cite{MainArticle}: 
 
 \begin{enumerate}
 	\item On sélectionne une forme (état) non-terminale qui est toujours active. À titre d'exemple, ce symbole est nommé n
@@ -39,7 +39,7 @@ Les possibilités de génération sont pratiquement infinie. L'article étudié se pe
 \subsubsection{Exemple 1}
 
 \begin{figure}[h]
-    \caption{Une maison simple}
+    \caption{Une maison simple~\cite{MainArticle}}
     \centering
 
     \includegraphics[width=7cm]{simpleEx.png}
@@ -51,7 +51,7 @@ Cet exemple montre la façon de créer la structure la plus simple avec cet algori
 \subsubsection{Exemple 2}
 
 \begin{figure}[h]
-    \caption{Un bloc d'édifices a bureaux}
+    \caption{Un bloc d'édifices a bureaux~\cite{MainArticle}}
     \centering
 
     \includegraphics[width=7cm]{blocEx.png}
@@ -63,7 +63,7 @@ Cet exemple tente de montrer qu'il est possible de générer plus qu'un seul bâtim
 \subsubsection{Exemple 3}
 
 \begin{figure}[h]
-    \caption{Une maison de banlieue plus évoluée}
+    \caption{Une maison de banlieue plus évoluée~\cite{MainArticle}}
     \centering
 
     \includegraphics[width=7cm]{banEx.png}

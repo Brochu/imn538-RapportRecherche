@@ -1,5 +1,20 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: rapport.aux
 The style file: plainnat-fr.bst
-I found no \citation commands---while reading file rapport.aux
 Database file #1: biblio.bib
-(There was 1 error message)
+Warning--to sort, need author or key in ProcGen
+Warning--to sort, need author or key in MainArticle
+Warning--to sort, need author or key in AkalabethGen
+Warning--to sort, need author or key in Left4DeadAI
+Warning--to sort, need author or key in ParishMuller
+Warning--to sort, need author or key in CtxFreeGram
+Warning--to sort, need author or key in ShapeGram
+Warning--to sort, need author or key in EsriCityEngine
+Warning--empty year in Left4DeadAI
+Warning--empty year in CtxFreeGram
+Warning--empty year in EsriCityEngine
+Warning--empty year in AkalabethGen
+Warning--empty year in ProcGen
+Warning--empty year in ShapeGram
+Warning--empty year in MainArticle
+Warning--empty year in ParishMuller
+(There were 16 warnings)

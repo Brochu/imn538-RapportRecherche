@@ -1,9 +1,56 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{8}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname fonteauteurs\endcsname\relax
 \def\fonteauteurs{\scshape}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}%
     \message{You should include the url package}\fi
+
+\bibitem[Lef()]{Left4DeadAI}
+The ai systems of left 4 dead.
+\newblock
+  \url{http://www.makeuseof.com/tag/procedural-generation-took-gaming-industry/}.
+\newblock Visite: 2015-04-24.
+
+\bibitem[Ctx()]{CtxFreeGram}
+Context-free grammar.
+\newblock
+  \url{https://www.cs.rochester.edu/~nelson/courses/csc_173/grammars/cfg.html}.
+\newblock Visite: 2015-04-24.
+
+\bibitem[Esr()]{EsriCityEngine}
+Esri cityengine.
+\newblock \url{http://www.esri.com/software/cityengine}.
+\newblock Visite: 2015-04-24.
+
+\bibitem[Aka()]{AkalabethGen}
+Historic rpg akalabeth: World of doom free on gog.
+\newblock
+  \url{http://segmentnext.com/2014/12/24/historic-rpg-akalabeth-world-doom-free-gog/}.
+\newblock Visite: 2015-04-24.
+
+\bibitem[Pro()]{ProcGen}
+How procedural generation took over the gaming industry.
+\newblock
+  \url{http://www.makeuseof.com/tag/procedural-generation-took-gaming-industry/}.
+\newblock Visite: 2015-04-24.
+
+\bibitem[Sha()]{ShapeGram}
+Introduction to shape grammars.
+\newblock
+  \url{http://home.fa.utl.pt/~albertidigital/AD_VER1011/files/aula05/aula05_shapeGrammars.pdf}.
+\newblock Visite: 2015-04-24.
+
+\bibitem[Mai()]{MainArticle}
+Procedural modeling of buildings.
+\newblock
+  \url{http://info.usherbrooke.ca/ogodin/enseignement/imn538/articles/NON%20DISPONIBLE%20-%20Procedural%20Modeling%20of%20Buildings.pdf}.
+\newblock Visite: 2015-04-24.
+
+\bibitem[Par()]{ParishMuller}
+Procedural modeling of cities.
+\newblock
+  \url{http://www.makeuseof.com/tag/procedural-generation-took-gaming-industry/}.
+\newblock Visite: 2015-04-24.
 
 \end{thebibliography}

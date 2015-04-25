@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.14)  22 APR 2015 00:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.14)  24 APR 2015 20:14
 entering extended mode
 **rapport
 (D:\Ecole\imn538\rapportFinal\rapport.tex
@@ -419,32 +419,37 @@ Package refstyle Info: \annexpageref created on input line 32.
 \WF@everypar=\toks25
 Package: wrapfig 2003/01/31  v 3.6
 )
+("C:\Program Files (x86)\MiKTeX\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
 (D:\Ecole\imn538\rapportFinal\rapport.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 99.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 100.
+
 
 ("C:\Program Files (x86)\MiKTeX\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-LaTeX Info: Redefining \degres on input line 99.
-LaTeX Info: Redefining \dots on input line 99.
-LaTeX Info: Redefining \up on input line 99.
+LaTeX Info: Redefining \degres on input line 100.
+LaTeX Info: Redefining \dots on input line 100.
+LaTeX Info: Redefining \up on input line 100.
 
 
 Package frenchb.ldf Warning: OT1 encoding should not be used for French. 
 (frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
-(frenchb.ldf)                of your document, on input line 99.
+(frenchb.ldf)                of your document, on input line 100.
 
 ("C:\Program Files (x86)\MiKTeX\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -460,24 +465,24 @@ Package frenchb.ldf Warning: OT1 encoding should not be used for French.
 \makeMPintoPDFobject=\count119
 \everyMPtoPDFconversion=\toks27
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 106.
+LaTeX Font Info:    Try loading font information for U+msa on input line 107.
  ("C:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 106.
+LaTeX Font Info:    Try loading font information for U+msb on input line 107.
 
 ("C:\Program Files (x86)\MiKTeX\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 124.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 125.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 129.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 130.
  [1
 
 {C:/Users/Alex/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 140.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 141.
 
 (D:\Ecole\imn538\rapportFinal\rapport.toc)
 \tf@toc=\write3
@@ -509,25 +514,41 @@ Package pdftex.def Info: minecraft.png used on input line 16.
 (pdftex.def)             Requested size: 199.16928pt x 99.5829pt.
  [5 <D:/Ecole/imn538/rapportFinal/minecraft.png>]) (D:\Ecole\imn538\rapportFina
 l\sect3.tex
-[6] [7] <simpleEx.png, id=33, 634.62094pt x 434.37282pt>
+[6]
+Overfull \hbox (12.99731pt too wide) detected at line 17
+\OML/cmm/m/it/12 A \OMS/cmsy/m/n/12 ! \OT1/cmr/m/n/12 [\OML/cmm/m/it/12 T\OT1/c
+mr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n
+/12 6)\OML/cmm/m/it/12 S\OT1/cmr/m/n/12 (8\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 10
+\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 18)\OML/cmm/m/it/12 I\OT1/cmr/m/n/12 ("\OML/
+cmm/m/it/12 cube\OT1/cmr/m/n/12 ")]\OML/cmm/m/it/12 T\OT1/cmr/m/n/12 (6\OML/cmm
+/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0)\OML/cmm/m/it/
+12 S\OT1/cmr/m/n/12 (7\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 13\OML/cmm/m/it/12 ; \
+OT1/cmr/m/n/12 18)\OML/cmm/m/it/12 I\OT1/cmr/m/n/12 ("\OML/cmm/m/it/12 cube\OT1
+/cmr/m/n/12 ")\OML/cmm/m/it/12 T\OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m
+/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 16)\OML/cmm/m/it/12 S\OT1/cmr/m/n/12 
+(8\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 15\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 8)\OM
+L/cmm/m/it/12 I\OT1/cmr/m/n/12 ("\OML/cmm/m/it/12 cylinder\OT1/cmr/m/n/12 ")
+ []
+
+[7] <simpleEx.png, id=34, 634.62094pt x 434.37282pt>
 File: simpleEx.png Graphic file (type png)
  <use simpleEx.png>
 Package pdftex.def Info: simpleEx.png used on input line 45.
 (pdftex.def)             Requested size: 199.16928pt x 136.32443pt.
 
-<blocEx.png, id=34, 444.15938pt x 396.7322pt>
+<blocEx.png, id=35, 444.15938pt x 396.7322pt>
 File: blocEx.png Graphic file (type png)
  <use blocEx.png>
 Package pdftex.def Info: blocEx.png used on input line 57.
 (pdftex.def)             Requested size: 199.16928pt x 177.89825pt.
- [8 <D:/Ecole/imn538/rapportFinal/simpleEx.png>] <banEx.png, id=39, 484.05844pt
+ [8 <D:/Ecole/imn538/rapportFinal/simpleEx.png>] <banEx.png, id=40, 484.05844pt
  x 422.32782pt>
 File: banEx.png Graphic file (type png)
 
 <use banEx.png>
 Package pdftex.def Info: banEx.png used on input line 69.
 (pdftex.def)             Requested size: 199.16928pt x 173.76772pt.
- <groupEx.png, id=40, 479.54156pt x 277.78781pt>
+ <groupEx.png, id=41, 479.54156pt x 277.78781pt>
 File: groupEx.png Graphic file (type png)
 
 <use groupEx.png>
@@ -536,27 +557,54 @@ Package pdftex.def Info: groupEx.png used on input line 70.
  [9 <D:/Ecole/imn538/rapportFinal/blocEx.png> <D:/Ecole/imn538/rapportFinal/ban
 Ex.png> <D:/Ecole/imn538/rapportFinal/groupEx.png>])
 (D:\Ecole\imn538\rapportFinal\concl.tex) [10]
-(D:\Ecole\imn538\rapportFinal\rapport.bbl You should include the url package
+(D:\Ecole\imn538\rapportFinal\rapport.bbl
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 12.
 
-Package natbib Warning: Empty `thebibliography' environment on input line 9.
+("C:\Program Files (x86)\MiKTeX\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
+[]\OT1/ptm/m/n/12 The ai sys-tems of left 4 dead.  $\OT1/pcr/m/n/12 http : / / 
+www . makeuseof . com / tag /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--49
+[]\OT1/ptm/m/n/12 Procedural mo-de-ling of buil-dings.  $\OT1/pcr/m/n/12 http :
+ / / info . usherbrooke . ca / ogodin /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--49
+\OT1/pcr/m/n/12 enseignement / imn538 / articles / NON % 20DISPONIBLE % 20-[] %
+ 20Procedural %
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--55
+[]\OT1/ptm/m/n/12 Procedural mo-de-ling of ci-ties.  $\OT1/pcr/m/n/12 http : / 
+/ www . makeuseof . com / tag /
+ []
 
 ) [11] (D:\Ecole\imn538\rapportFinal\rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 4499 strings out of 493921
- 59674 string characters out of 3146483
- 130221 words of memory out of 3000000
- 7674 multiletter control sequences out of 15000+200000
- 31489 words of font info for 80 fonts, out of 3000000 for 9000
+ 4630 strings out of 493921
+ 61505 string characters out of 3146483
+ 131507 words of memory out of 3000000
+ 7796 multiletter control sequences out of 15000+200000
+ 32004 words of font info for 82 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,12n,43p,1775b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,12n,43p,1787b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKT
 eX/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/urw/times/utmb
-8a.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on rapport.pdf (11 pages, 2136406 bytes).
+amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/urw/courier/ucrr8a.p
+fb><C:/Program Files (x86)/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program 
+Files (x86)/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
+Output written on rapport.pdf (11 pages, 2168208 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
+ 76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
