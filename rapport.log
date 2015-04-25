@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.14)  24 APR 2015 20:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.14)  24 APR 2015 21:14
 entering extended mode
 **rapport
 (D:\Ecole\imn538\rapportFinal\rapport.tex
@@ -502,18 +502,18 @@ File: AC.jpg Graphic file (type jpg)
 Package pdftex.def Info: AC.jpg used on input line 27.
 (pdftex.def)             Requested size: 199.16928pt x 112.03387pt.
 )
-(D:\Ecole\imn538\rapportFinal\sect2.tex [4 <D:/Ecole/imn538/rapportFinal/GTA4.j
-pg> <D:/Ecole/imn538/rapportFinal/AC.jpg>]
+(D:\Ecole\imn538\rapportFinal\sect2.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
 
-<minecraft.png, id=18, 602.25pt x 301.125pt>
+<minecraft.png, id=15, 602.25pt x 301.125pt>
 File: minecraft.png Graphic file (type png)
  <use minecraft.png>
 Package pdftex.def Info: minecraft.png used on input line 16.
 (pdftex.def)             Requested size: 199.16928pt x 99.5829pt.
- [5 <D:/Ecole/imn538/rapportFinal/minecraft.png>]) (D:\Ecole\imn538\rapportFina
-l\sect3.tex
+ [4 <D:/Ecole/imn538/rapportFinal/GTA4.jpg> <D:/Ecole/imn538/rapportFinal/AC.jp
+g>] [5 <D:/Ecole/imn538/rapportFinal/minecraft.png>]) (D:\Ecole\imn538\rapportF
+inal\sect3.tex
 [6]
 Overfull \hbox (12.99731pt too wide) detected at line 17
 \OML/cmm/m/it/12 A \OMS/cmsy/m/n/12 ! \OT1/cmr/m/n/12 [\OML/cmm/m/it/12 T\OT1/c
@@ -541,23 +541,25 @@ File: blocEx.png Graphic file (type png)
  <use blocEx.png>
 Package pdftex.def Info: blocEx.png used on input line 57.
 (pdftex.def)             Requested size: 199.16928pt x 177.89825pt.
- [8 <D:/Ecole/imn538/rapportFinal/simpleEx.png>] <banEx.png, id=40, 484.05844pt
- x 422.32782pt>
-File: banEx.png Graphic file (type png)
 
-<use banEx.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8 <D:/Ecole/imn538/rapportFinal/simpleEx.png>]
+<banEx.png, id=40, 484.05844pt x 422.32782pt>
+File: banEx.png Graphic file (type png)
+ <use banEx.png>
 Package pdftex.def Info: banEx.png used on input line 69.
 (pdftex.def)             Requested size: 199.16928pt x 173.76772pt.
- <groupEx.png, id=41, 479.54156pt x 277.78781pt>
-File: groupEx.png Graphic file (type png)
 
-<use groupEx.png>
+<groupEx.png, id=41, 479.54156pt x 277.78781pt>
+File: groupEx.png Graphic file (type png)
+ <use groupEx.png>
 Package pdftex.def Info: groupEx.png used on input line 70.
 (pdftex.def)             Requested size: 199.16928pt x 115.37303pt.
  [9 <D:/Ecole/imn538/rapportFinal/blocEx.png> <D:/Ecole/imn538/rapportFinal/ban
-Ex.png> <D:/Ecole/imn538/rapportFinal/groupEx.png>])
-(D:\Ecole\imn538\rapportFinal\concl.tex) [10]
-(D:\Ecole\imn538\rapportFinal\rapport.bbl
+Ex.png> <D:/Ecole/imn538/rapportFinal/groupEx.png>]) (D:\Ecole\imn538\rapportFi
+nal\concl.tex) [10] (D:\Ecole\imn538\rapportFinal\rapport.bbl
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 12.
 
 ("C:\Program Files (x86)\MiKTeX\tex\latex\psnfss\ot1pcr.fd"
@@ -569,19 +571,19 @@ www . makeuseof . com / tag /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--49
-[]\OT1/ptm/m/n/12 Procedural mo-de-ling of buil-dings.  $\OT1/pcr/m/n/12 http :
- / / info . usherbrooke . ca / ogodin /
+Underfull \hbox (badness 2556) in paragraph at lines 45--48
+[]\OT1/ptm/m/n/12 Procedural mo-de-ling of buil-dings.  URL $\OT1/pcr/m/n/12 ht
+tp : / / info . usherbrooke . ca / ogodin /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--49
+Underfull \hbox (badness 10000) in paragraph at lines 45--48
 \OT1/pcr/m/n/12 enseignement / imn538 / articles / NON % 20DISPONIBLE % 20-[] %
  20Procedural %
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--55
+Underfull \hbox (badness 10000) in paragraph at lines 50--54
 []\OT1/ptm/m/n/12 Procedural mo-de-ling of ci-ties.  $\OT1/pcr/m/n/12 http : / 
 / www . makeuseof . com / tag /
  []
@@ -594,7 +596,7 @@ Here is how much of TeX's memory you used:
  7796 multiletter control sequences out of 15000+200000
  32004 words of font info for 82 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,12n,43p,1787b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,13n,43p,1788b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKT
 eX/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/
@@ -602,7 +604,7 @@ amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX/fonts/type1/urw/courier/ucrr8a.p
 fb><C:/Program Files (x86)/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program 
 Files (x86)/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on rapport.pdf (11 pages, 2168504 bytes).
+Output written on rapport.pdf (11 pages, 2168485 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
